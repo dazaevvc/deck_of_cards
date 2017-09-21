@@ -9,7 +9,7 @@
 //
 //   // Make 52 card objects and store them in the "cards" array
 //   // Hint: use 2 for loops
-//  function deck_o_cards() {
+ function deck_o_cards() {
   var values = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'Jack', 'Queen', 'King', 'Ace'];
   var suits = ['hearts', 'diamonds', 'clubs', 'spades'];
 
@@ -19,16 +19,16 @@
   // Make 52 card objects and store them in the "cards" array
   // Hint: use 2 for loops
 
-  for (var x = 0; x < suits.length; x++){
-     for (var y = 0; y < values.length; y++){
+  for (var x = 0; x < values.length; x++){
+     for (var y = 0; y < suits.length; y++){
        var cardProps = {
-         suite: suits[x],
-         value: values[y]
+         suite: suits[y],
+         value: values[x]
        };
-        cards.push(cardProps)
-        console.log(cardProps);
+        cards.push(cardProps);
      }
    }
+   console.log(cards);
 }
 deck_o_cards();
 //   }
