@@ -33,23 +33,6 @@
 deck_o_cards();
 //   }
 
-  // 2. Shuffle the cards
-  // Hint: shuffle function is already defined below
-
-
-  // Pull the top card from the newly shuffledCards
-
-
-  // 3. Print the results:
-  // "The deck has {n} cards"
-  // "The top card is the {value} of {suit}"
-
-}
-
-
-
-// Fisher-Yates Shuffle
-// http://stackoverflow.com/a/6274398
 function shuffle(array) {
     var counter = array.length, temp, index;
 
@@ -69,3 +52,5 @@ function shuffle(array) {
 
     return array;
 }
+
+shuffle(cards)
